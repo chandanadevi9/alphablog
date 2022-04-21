@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Sciences</h1>
+
+<div id="sciences">
+  <% @sciences.each do |science| %>
+    <%= render science %>
+    <p>
+      <%= link_to "Show this science", science %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New science", new_science_path %>
